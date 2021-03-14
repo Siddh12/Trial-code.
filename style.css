@@ -1,0 +1,19 @@
+.box1,
+.box2,
+.box3,
+.boxa,
+.boxb{
+    height: 2cm;
+    width: 2cm;
+    border: solid;
+    cursor: pointer;
+    margin: 1cm;
+    text-align: center;
+
+}
+.boxa{
+    background-color: blueviolet;
+}
+.boxb{
+   background-color: orange; 
+}

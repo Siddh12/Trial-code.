@@ -1,21 +1,15 @@
-let presentbox;
-const array=[".box1",".box2",".box3"];
-const colorbox=[".boxa",".boxb"]
-const newarray = array.map((id)=>{
-    return document.querySelector(id)  
+// 
+
+const boxa = document.getElementById("boxa");
+const boxb = document.getElementById("boxb");
+const boxc = document.getElementById("boxc");
+
+boxa.addEventListener(`click`,()=>{
+    boxb.classList.add("box2");
+});
+boxc.addEventListener(`click`,()=>{
+    boxb.classList.remove("box2");
 });
 
 
-newarray.forEach((element)=>{
-    element.addEventListener(`click`,(e)=>{
-        collerfiller(e.target)
-    })
-});
 
-function collerfiller(presentboxid) {
-     presentbox = presentboxid
-     colorbox.map((id)=>document.querySelector(id))
-     .forEach((ele)=>ele.addEventListener(`mouseenter`,(e)=>{
-        presentbox.style.backgroundColor = window.getComputedStyle(e.target).backgroundColor
-     }))
-};
